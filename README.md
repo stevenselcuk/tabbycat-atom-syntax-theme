@@ -1,5 +1,8 @@
-# tabbycat-syntax theme
+# Tabby Cat 🐈
 
-A short description of your theme.
+JS first Atom Syntax Theme 
+
+### Install it
+`apm install tabbycat-syntax`
 
 ![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
