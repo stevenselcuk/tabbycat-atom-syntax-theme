@@ -1,0 +1,46 @@
+//semi-colons
+span.syntax--punctuation.syntax--terminator.syntax--rule{
+    color:lighten(@syntax-background-color,20%);
+}
+
+.line-number {
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    border-left:1px solid transparent;
+    transition: all 0.6s ease-in-out;
+
+    &.cursor-line{
+        border-color:@blue;
+        color: #F6BE0B!important;
+        font-family: "Operator Mono Book Italic"!important;;
+        font-style: italic!important;;
+    }
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, atom-text-editor .gutter .line-number.cursor-line-no-selection {
+		color: #F6BE0B;
+}
+
+
+
+.editor .selection .region{
+    background:lighten(@syntax-background-color,6%) !important;
+}
+
+.bracket-matcher .region {
+  background: rgba(83, 46, 160, .8);
+  border: 1px solid #7955C1!important;
+	border-radius: 3px!important;
+  position: absolute;
+  text-decoration: none;
+  transform:scale(1.2);
+}
+
+atom-text-editor.editor .highlight.find-result .region {
+    background: rgba(83, 46, 160, .8)!important;
+    border: 1px solid #7955C1!important;
+    border-radius: 3px!important;
+    box-shadow: none!important;
+  transform:scale(1.2);
+}

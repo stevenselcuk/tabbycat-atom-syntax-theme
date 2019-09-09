@@ -1,0 +1,155 @@
+.font(@font, @weight, @style, @path) {
+	@font-face {
+		font-family: @font;
+		font-style: @style;
+		font-weight: @weight;
+		src: url('/Users/selcukahmet/Library/Fonts/@{path}');
+	}
+}
+
+.font ( 'Operator Mono Light', normal, normal, 'OperatorMono-light.otf' );;;;;;;;;;
+.font ( 'Operator Mono Book', 400, normal, 'OperatorMono-book.otf' );;;;;;;;;;
+.font ( 'Operator Mono Light Italic', normal, normal, 'OperatorMono-LightItalic.otf' );;;;;;;;;;
+.font ( 'Operator Mono Book Italic', normal, normal, 'OperatorMono-BookItalic.otf');;;;;;;;;;
+.font ( 'OperatorMonoLig-Book', normal, normal, 'OperatorMonoLig-Book.otf');;;;;;;;;;
+.font ( 'OperatorMono-Bold', normal, normal, 'OperatorMonoLig-Book.otf');;;;;;;;;;
+atom-workspace {
+	-webkit-font-smoothing: antialiased;
+	font-family: "Operator Mono Book";
+	font-size:11px;
+	font-weight: 500;
+	text-rendering: optimizeLegibility;
+}
+atom-workspace i {
+		font-family: "Operator Mono Light Italic";
+}
+
+atom-text-editor.editor {
+  .syntax--storage.syntax--type.syntax--function.syntax--arrow,
+  .syntax--keyword.syntax--operator:not(.accessor),
+  .syntax--punctuation.syntax--definition {
+    font-family: "OperatorMonoLig-Book";
+  }
+  .syntax--storage.syntax--type.syntax--function.syntax--arrow,
+  .syntax--keyword.syntax--operator:not(.accessor):not(.syntax--new),
+  .syntax--punctuation.syntax--definition:not(.syntax--tag):not(.syntax--bracket):not(.syntax--brace) {
+    font-family: "OperatorMonoLig-Book";
+  }
+
+  .syntax--string.syntax--quoted,
+  .syntax--string.syntax--regexp {
+    -webkit-font-feature-settings: "liga" off, "calt" off;
+  }
+}
+
+.entity.other.attribute-name {
+	font-family: "Operator Mono Book Italic";
+	font-style: italic;
+}
+atom-text-editor.editor .syntax--entity.syntax--other.syntax--attribute-name{
+		.entity.other.attribute-name, {
+   font-family: "Operator Mono Book Italic";
+		font-style: italic;
+		}
+}
+
+atom-text-editor.editor .syntax--string .syntax--quoted syntax--double syntax--html{
+	
+  font-family: "Operator Mono Book Italic";
+			font-style: italic;
+
+}
+
+atom-text-editor.editor .syntax--string.syntax--quoted, atom-text-editor.editor .syntax--string.syntax--regexp {
+
+	font-family: "Operator Mono Book Italic";
+	font-style: italic;
+}
+
+.syntax--punctuation.syntax--section.syntax--property-list.syntax--bracket.syntax--curly.syntax--scss,
+.syntax--punctuation.syntax--section.syntax--array.syntax--php,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--php,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--css,
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css,
+.syntax--punctuation.syntax--section.syntax--property-list.syntax--bracket.syntax--curly.syntax--css,
+.syntax--punctuation.syntax--section.syntax--function.syntax--bracket.syntax--round.syntax--css,
+.syntax--string.syntax--quoted.syntax--double.syntax--html {
+	color: #F4DC6B;
+	font-family: "OperatorMono-Bold";
+	font-style: normal!important;
+	text-rendering: optimizeLegibility;
+
+}
+
+
+.syntax--keyword.syntax--phpdoc {
+	color: rgba(246, 190, 11, .3);
+	font-family: "OperatorMono-Bold";
+		font-style: normal!important;
+		text-rendering: optimizeLegibility;
+}
+
+
+.entity.other.attribute-name {
+	font-family: "Operator Mono Book Italic";
+	font-style: italic;
+}
+
+
+atom-text-editor .syntax--comment {
+	font-family: "Operator Mono Book Italic";
+	font-style: italic;
+	text-rendering: optimizeLegibility;
+}
+
+.syntax--keyword {
+		color: #F6BE0B;
+	font-family: "OperatorMono-Bold";
+		font-style: normal!important;
+		text-rendering: optimizeLegibility;
+}
+
+
+atom-text-editor .syntax--string.syntax--quoted.syntax--single.syntax--php {
+	font-family: "Operator Mono Book Italic";
+	font-style: italic;
+}
+
+atom-text-editor .syntax--attribute-name {
+	font-family: "Operator Mono Book Italic";
+	font-style: italic;
+}
+
+.entity.other.attribute-name,
+.comment,
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--js,
+.syntax--string.syntax--quoted.syntax--single.syntax--php,
+.syntax--keyword.syntax--control.syntax--js,
+.syntax--storage.syntax--modifier.syntax--js,
+.syntax--storage.syntax--type.syntax--class.syntax--js,
+.syntax--variable.syntax--language.syntax--js {
+	font-family: "Operator Mono Book Italic";
+	font-style: italic;
+	text-rendering: optimizeLegibility;
+}
+
+
+// SCSS Fonts
+.syntax--scss .syntax--property-value {
+	font-family: "Operator Mono Book Italic";
+	font-style: italic;
+	text-rendering: optimizeLegibility;
+}
+
+.syntax--scss .syntax--important {
+	font-family: "OperatorMono-Bold";
+		font-style: normal!important;
+		text-rendering: optimizeLegibility;
+}
+
+.syntax--scss .syntax--constant.syntax--numeric,
+.syntax--scss .syntax--variable {
+	font-family: "OperatorMono-Bold"!important;
+		font-style: normal!important;
+		text-rendering: optimizeLegibility;
+}
