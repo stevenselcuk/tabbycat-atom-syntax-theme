@@ -1,5 +1,7 @@
 # Tabby Cat 🐈
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/stevenselcuk/tabbycat-atom-syntax-theme.svg)](https://greenkeeper.io/)
+
 JS first Atom Syntax Theme 
 
 ### Install it
